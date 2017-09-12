@@ -32,16 +32,15 @@ class Trader:
         else:
             print ("Not BTC!")
 
-
-trader = Trader("api")
-cost = [x for x in range(4096, 4296)]
-
-for t in cost:
-    flag = random.randint(0, 1)
-    if flag == 0:
-        trader.btc_buy(t)
-    else:
-        trader.btc_sell(t)
+if __name__ == "__main__":
+    trader = Trader("api")
+    cost = [x for x in range(4096, 4296)]
+    for t in cost:
+        flag = random.randint(0, 1)
+        if flag == 0:
+            trader.btc_buy(t)
+        else:
+            trader.btc_sell(t)
 
 
 
