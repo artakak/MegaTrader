@@ -25,7 +25,7 @@ fig, ax = plt.subplots()
 
 candlestick2_ohlc(ax,quotes['open'],quotes['high'],quotes['low'],quotes['close'],width=0.6)
 
-ax.xaxis.set_major_locator(ticker.MaxNLocator(6))
+ax.xaxis.set_major_locator(ticker.MaxNLocator(20))
 
 def chart_date(x,pos):
     try:
